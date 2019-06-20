@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Demo website Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testClass.HomePageTest">
+        <methods>
+          <include name="launchHomePage"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testClass.HomePageTest -->
+    </classes>
+  </test> <!-- Demo website Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
