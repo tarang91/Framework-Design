@@ -3,7 +3,7 @@ package testClass;
 
 import org.testng.annotations.Test;
 import pageObjects.BaseClass;
-import pageObjects.DashboardPageObjects;
+import pageObjects.StudentPageObjects;
 import pageObjects.HomePageObjects;
 
 public class HomePageTest extends BaseClass{
@@ -26,10 +26,5 @@ public class HomePageTest extends BaseClass{
 		hp.clickLogin2();
 		logger.info("Logged in Successfully");
 	}
-	@Test (priority= 1)
-	public void DashboardCounts() {
-		DashboardPageObjects dpo = new DashboardPageObjects(driver);
-		System.out.println("Total Number of Assessments are : "+dpo.getAssessmentCount());
 	
-	}
 }
